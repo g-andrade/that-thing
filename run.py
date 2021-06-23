@@ -105,7 +105,7 @@ def new_release_name(minimum_age):
     return 'vacina-para-%d-anos-ou-mais' % minimum_age
 
 def new_release_message(minimum_age):
-    return 'A Vacina está agora disponível para quem tenha %d ou mais anos de idade.' % minimum_age
+    return 'A vacina está agora disponível para quem tenha %d ou mais anos de idade.' % minimum_age
 
 def published_releases(repo):
     releases = repo.get_releases()
