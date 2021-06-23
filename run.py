@@ -84,7 +84,7 @@ def parse_minimum_age(raw_html):
         logging.error('Could not find `pedido_node` in page')
         return
 
-    sentence_node = soup.find('h3', {'class': 'has-text-color'})
+    sentence_node = pedido_node.find('h3', {'class': 'has-text-color'})
     if sentence_node is None:
         logging.error('Could not find `sentence_node` in page')
         return
