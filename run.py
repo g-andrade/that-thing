@@ -24,7 +24,7 @@ def run():
     previously_published_releases = published_releases(repo)
 
     raw_html_bytes = fetch_page()
-    if raw_html is None:
+    if raw_html_bytes is None:
         sys.exit(1)
 
     raw_html = raw_html_bytes.encode('UTF-8')
