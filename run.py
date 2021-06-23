@@ -24,10 +24,10 @@ def run():
     previously_published_releases = published_releases(repo)
 
     raw_html_bytes = fetch_page()
-    raw_html = raw_html_bytes.encode('UTF-8')
     if raw_html is None:
         sys.exit(1)
 
+    raw_html = raw_html_bytes.encode('UTF-8')
     minimum_age = parse_minimum_age(raw_html)
     if minimum_age is None:
         sys.exit(1)
